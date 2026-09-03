@@ -1,0 +1,147 @@
+:root{
+    --cor-primaria: blue;
+    --cor-fundo: rgb(236, 243, 255);
+    --cor-card: white;
+    --cor-texto: black;
+    --sombra: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+header{
+    width: 100%;
+}
+
+header, footer{
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main{
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    margin-bottom: 2rem;
+    background-color: var(--cor-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--cor-primaria);
+}
+h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--cor-card);
+}
+
+#form-cadastro{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 0.8rem;
+    margin: 0 auto;
+}
+
+#form-cadastro input{
+    padding: 0.8rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#form-cadastro button{
+    padding: 0.8rem;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3;
+    &:hover{
+        background-color: rgb(72, 72, 255);
+    }
+}
+
+#lista-filmes{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    #lista-filmes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #lista-filmes{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.item-card{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+    background-color: var(--cor-card);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: var(--sombra);
+    transition: all 0.3s;
+    &:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+}
+
+.item-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.item-card h3{
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.item-card button{
+    background-color: rgb(186, 50, 50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover{
+        background-color: rgb(209, 96, 96);
+    }
+}
