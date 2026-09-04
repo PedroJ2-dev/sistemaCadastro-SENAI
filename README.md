@@ -1,7 +1,6 @@
 # Trabalho Acadêmico
 Nesta tarefa academica foi utilizado html, css e java script **puros**, sem utilizar nenhum framework. Esta aplicação é um protótipo funcional que tem como objetivo gerenciar uma lista de filmes, realizando cadastros e os armazenando no local storage.
 ### Habilidades Aprendidas
-### Habilidades Aprendidas
 - Estrutura semântica
 - Metodologia Mobile First
 - Responsividade Tablet, Desktop
@@ -9,8 +8,8 @@ Nesta tarefa academica foi utilizado html, css e java script **puros**, sem util
 - Transições
 - Manipulação do DOM
 - Manipulação de arquivos .JSON
-- Renderização de cards dinamica
-- Validação de formularios
+- Renderização de cards dinâmica
+- Validação de formulários
 
 ## Demostração
 
